@@ -34,7 +34,8 @@ def extract_urls_from_sitemap(content):
         return []
 
 # Load the initial XML file
-with open('/Users/michael.lock/Desktop/sitemap.xml', 'r') as file:
+sitemap_path = 'sitemap.xml'  # Ensure this matches the path in your repository
+with open(sitemap_path, 'r') as file:
     initial_xml_content = file.read()
 
 # Extract initial sitemap URLs from the provided XML file
